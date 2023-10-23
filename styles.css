@@ -2,3 +2,40 @@
     display: grid;
     grid-template: 200px auto / 300px auto;
 }
+
+.sidebar{
+    font-family: sans-serif;
+    color: white;
+    background-color: #047857;
+    display: grid;
+    height: 100vh;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.titlebar{
+    display: grid;
+    grid-template-columns: 100px auto;
+    align-content: center;
+}
+
+.title, .logo{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+}
+
+.logo{
+    background-image: url(icons/squares.png);
+    background-size: 60px;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+ul{
+    list-style: none;
+    display: grid;
+}
