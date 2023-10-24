@@ -1,6 +1,6 @@
 .container{
     display: grid;
-    grid-template: 200px auto / 300px auto;
+    grid-template: 200px 100% / 300px auto;
 }
 
 .sidebar{
@@ -8,9 +8,11 @@
     color: white;
     background-color: #047857;
     display: grid;
-    height: 100vh;
+    height: 100%;
     font-size: 22px;
     font-weight: 700;
+    position: sticky;
+    grid-row: span 2;
 }
 
 .titlebar{
@@ -38,4 +40,11 @@
 ul{
     list-style: none;
     display: grid;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.sidebar ul{
+    grid-template-columns: 40px auto;
+    grid-template-rows: repeat(6, 1fr);
 }
