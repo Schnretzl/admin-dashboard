@@ -66,6 +66,7 @@ ul{
     background-color: #cbd5e1;
     height: 20px;
     padding: 5px 15px;
+    width: inherit;
 }
 
 .search{
@@ -94,4 +95,23 @@ ul{
 
 .form1 div{
     width: auto;
+}
+
+.user{
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    height: auto;
+    font-size: 20px;
+    font-family: sans-serif;
+    align-items: center;
+
+}
+
+.user img{
+    height: 40px;
+}
+
+.avatar{
+    height: 30%;
+    border-radius: 50%;
 }
