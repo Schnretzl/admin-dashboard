@@ -58,8 +58,9 @@ ul{
 .header{
     display: grid;
     grid-template: 60px 120px / 2fr 1fr;
-    margin-left: 20px;
+    padding-left: 20px;
     row-gap: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
 }
 
 #searchbar{
