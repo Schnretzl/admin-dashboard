@@ -120,7 +120,7 @@ ul{
 
 .welcome{
     display: grid;
-    grid-template-rows: 80px 80px;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 110px auto;
     row-gap: 10px;
     column-gap: 20px;
@@ -138,4 +138,25 @@ ul{
     height: auto;
     display: grid;
     align-self: center;
+}
+
+.interactions{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+.interactions button{
+    color: white;
+    background-color: #047857;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    height: fit-content;
+    padding: 10px;
+    width: 100px;
+    font-weight: bold;
+    font-size: 16px;
 }
