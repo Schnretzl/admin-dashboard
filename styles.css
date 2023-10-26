@@ -171,8 +171,11 @@ ul{
     grid-template-rows: 1fr 1fr;
 }
 
-.projects{
+.projects, .announcements{
     display: grid;
+}
+
+.projects{
     grid-row: span 2;
     grid-template-columns: repeat(2, minmax(300px, 400px));
     grid-template-rows: 30px repeat(3, minmax(150px, 250px));
@@ -236,11 +239,9 @@ ul{
 
 .announcements{
     padding-top: 20px;
-    display: grid;
-    grid-template-rows: 30px;
+    grid-template-rows: 30px repeat(1, minmax(350px, 400px));
     row-gap: 20px;
     margin-right: 20px;
-    padding: 10px;
 }
 
 .announcements > div{
