@@ -16,8 +16,9 @@
     height: 100%;
     font-size: 22px;
     font-weight: 700;
-    position: sticky;
     grid-row: span 2;
+    display: grid;
+    grid-template-rows: 2fr 3fr 3fr 10fr;
 }
 
 .titlebar{
@@ -174,28 +175,31 @@ ul{
     display: grid;
     grid-row: span 2;
     grid-template-columns: repeat(2, minmax(300px, 400px));
-    grid-template-rows: 20px repeat(3, minmax(150px, 250px));
+    grid-template-rows: 30px repeat(3, minmax(150px, 250px));
     padding-left: 20px;
     padding-top: 20px;
     gap: 20px;
 }
 
-.projects p:first-child{
+.projects h1{
     grid-column: span 2;
-    font-size: 22px;
-    font-weight: bold;
+    /* font-size: 22px;
+    font-weight: bold; */
 }
 
 .card{
-    background-color: white;
-    border-radius: 10px;
     padding: 25px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
     border-left: 4px solid #3b82f6;
     border-left-width: 10px;
     display: grid;
     grid-template-rows: 3fr 1fr;
     grid-template-columns: 2fr 1fr;
+}
+
+.card, .announcements > div{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
 }
 
 .card div:first-child{
@@ -228,4 +232,19 @@ ul{
 
 .share{
     background: url(icons/share-variant-outline.svg) no-repeat;
+}
+
+.announcements{
+    padding-top: 20px;
+    display: grid;
+    grid-template-rows: 30px;
+    row-gap: 20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.announcements > div{
+    padding: 20px;
+    display: grid;
+    align-content: space-evenly;
 }
