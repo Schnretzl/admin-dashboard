@@ -187,4 +187,38 @@ ul{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
     border-left: 4px solid #3b82f6;
     border-left-width: 10px;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+.card div:first-child{
+    grid-column: span 2;
+}
+
+.card div:nth-child(2){
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    grid-column-start: 2;
+}
+
+.card button{
+    height: 100%;
+    width: 20%;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.favorite{
+    background: url(icons/star-plus-outline.svg) no-repeat;
+}
+
+.show-more{
+    background: url(icons/eye-plus-outline.svg) no-repeat;
+}
+
+.share{
+    background: url(icons/share-variant-outline.svg) no-repeat;
 }
