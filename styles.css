@@ -117,7 +117,7 @@ ul{
 }
 
 .avatar{
-    height: 30%;
+    width: 60%;
     border-radius: 50%;
 }
 
@@ -168,10 +168,10 @@ ul{
     background-color: #cbd5e1;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: min-content;
 }
 
-.projects, .announcements{
+.projects, .announcements, .trending, .trending > div, .trending-user{
     display: grid;
 }
 
@@ -186,8 +186,6 @@ ul{
 
 .projects h1{
     grid-column: span 2;
-    /* font-size: 22px;
-    font-weight: bold; */
 }
 
 .card{
@@ -199,7 +197,7 @@ ul{
     grid-template-columns: 2fr 1fr;
 }
 
-.card, .announcements > div{
+.card, .announcements > div, .trending > div{
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
@@ -248,4 +246,27 @@ ul{
     padding: 20px;
     display: grid;
     align-content: space-evenly;
+}
+
+.trending{
+    margin-top: 20px;
+    margin-right: 20px;
+    grid-template-rows: 30px repeat(1, minmax(350px, 400px));
+    row-gap: 20px;
+}
+
+.trending > h1{
+    grid-column: span 2;
+}
+
+.trending > div{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr)
+}
+
+.trending > div > div{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 0 25px;
 }
