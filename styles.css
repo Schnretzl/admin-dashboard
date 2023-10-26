@@ -18,7 +18,7 @@
     font-weight: 700;
     grid-row: span 2;
     display: grid;
-    grid-template-rows: 2fr 3fr 3fr 10fr;
+    grid-template-rows: 2fr 3fr 3fr 100%;
 }
 
 .titlebar{
@@ -168,7 +168,7 @@ ul{
     background-color: #cbd5e1;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: min-content;
+    grid-template-rows: repeat(2, min-content);
 }
 
 .projects, .announcements, .trending, .trending > div, .trending-user{
