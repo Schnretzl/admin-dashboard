@@ -137,16 +137,13 @@ ul{
     font-size: 20px;
     font-family: sans-serif;
     align-items: center;
-
+    justify-self: end;
 }
 
 .user img{
     height: 40px;
     width: auto;
-}
-
-.user img:first-child{
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
 .avatar{
@@ -171,6 +168,7 @@ ul{
 .welcomepic{
     grid-row: span 2;
     width: -webkit-fill-available;
+    width: -moz-fill-available;
     height: auto;
     display: grid;
     align-self: center;
@@ -182,6 +180,9 @@ ul{
     align-items: center;
     justify-items: center;
     gap: 10px;
+    width: 300px;
+    justify-self: end;
+    margin-right: 40px;
 }
 
 .interactions button{
