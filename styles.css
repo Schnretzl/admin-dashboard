@@ -145,6 +145,10 @@ ul{
     width: auto;
 }
 
+.user img:first-child{
+    padding-left: 20px;
+}
+
 .avatar{
     width: 60%;
     border-radius: 50%;
