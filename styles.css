@@ -80,15 +80,14 @@ ul{
 }
 
 .search{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center; 
+    display: grid;
+    width: auto;
 }
 
 .form1{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     align-items: center;
+    grid-template-columns: 45px 1fr;
 }
 
 
@@ -103,7 +102,7 @@ ul{
 }
 
 .form1 div{
-    width: auto;
+    width: -webkit-fill-available;
 }
 
 .user{
@@ -174,6 +173,7 @@ ul{
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(2, min-content);
+    column-gap: 15px;
 }
 
 .projects, .announcements, .trending, .trending > div, .trending-user{
